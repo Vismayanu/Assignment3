@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link to external css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Kuvempu</title>
+</head>
+<body>
+    <div class="container">
+        <button id="change-theme">Dark Theme</button>
+        <div class="content">
+            <section class="name-section">
+                <div class="image-container">
+                    <img src="C:\Users\HP\Downloads\viss\kuvempu1.jpg" alt="Kuvempu">
+                </div>
+                <div class="heading">
+                    <h1>KUVEMPU</h1>
+                    <h4>1904-1994</h4>
+                </div>
+            </section>
+            <section class="about-section">
+                <h1>Rashtrakavi Kuvempu</h1>
+                <p>
+                    Kuppali Venkatappa Puttappa (29 December 1904 – 11 November 1994),
+                    [3] popularly known by his pen name Kuvempu// (listen), was an Indian poet, 
+                    playwright, novelist and critic. 
+                    He is widely regarded as the greatest Kannada poet of the 20th century.
+                    [4][5][6][7][3][8] He was the first Kannada writer to receive the Jnanpith Award.[9
+                </p>
+            </section>
+            <section class="bio">
+                <h3>Biography</h3>
+                <ul>
+                    <li>Kuvempu was born on December 29, 1904, in Hirekodige, Kopa Taluk of chikmanglur district raised in Kupalli, a village in Shivamogga district. </li>
+                    <li>Kuvempu began his academic carrer as Lecturer of kannada language at the Maharajas's college in Mysore in 1929 .</li>
+                    <li>He worked as an assistant professor in the central college Banglore from 1936. </li>
+                    <li>He wrote many poems Kolalu,Pancgajanya,Navilu,Kalasundari.</li>
+                </ul>
+            </section>
+            <footer>
+                <p>
+                    Read more about Kuvempu on 
+                    <a target="_black" href="https://en.wikipedia.org/wiki/Kuvempu#:~:text=Kuppali%20Venkatappa%20Puttappa%20(29%20December,to%20receive%20the%20Jnanpith%20Award.">Wikipedia</a>
+                </p>
+            </footer>
+     
+        </div>
+      </div>
+    <script>
+        let icon = document.getElementById("change-theme");
+        let btn = document.getElementById('change-theme')
+        icon.onclick = function(){
+            document.body.classList.toggle('dark-theme');
+
+            if(document.body.classList.contains('dark-theme')){
+                btn.innerText = "Light Theme";
+            }
+            else(
+                btn.innerText = "Dark Theme"
+            )
+        }
+    </script>
+</body>
+</html>
